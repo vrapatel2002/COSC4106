@@ -1,0 +1,23 @@
+ public static int[] weightsubset(int[] array) {
+
+        int range = (int) Math.pow(2, array.length);
+        int[] weightarray = Arrays.copyOf(array, range);
+        int count = array.length;
+
+        for (int i = 0; i < array.length; i++) {
+
+            weightarray[count] = array[i];
+            count++;
+            
+            for (int j = i + 1; j < array.length - 1; j++) {
+
+                weightarray[count] = array[i] + array[j];
+                
+                count++;
+
+            }
+        }
+
+        return weightarray;
+
+    }

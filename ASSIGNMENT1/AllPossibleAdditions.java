@@ -7,13 +7,7 @@ public class AllPossibleAdditions {
         int count = 1;
         int num=0;
 
-        /*
-         * 8, 4, 5
-         * 0
-         * 0, 8
-         * 0, 8, 4, {8,4}
-         * 0, 8, 4, {8,4}, 5, {8,5}, {8,5,6}, {4,5}
-         */
+
         // generateSubset.add();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j <= i; j++) {
