@@ -26,7 +26,7 @@ public class knapsack {
                 totalWeight += subset[i];
 
             }
-            return array;
+            return generateSubsets(array, subset, 0, 0);
         }
 
         // Include the current element and generate subsets
